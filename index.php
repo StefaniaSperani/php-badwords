@@ -13,15 +13,20 @@ dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola d
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>PHP Bad Words</title>
 </head>
 <body>
     <main>
+        <h1>BAD WORD!!</h1>
+        <div class="form">
         <form action="chiamataForm/testo.php" method="GET">
             <input type="text" name="testo" placeholder="Il tuo testo">
             <input type="text" name="censored" placeholder="La parola da censurare">
             <button type="Submit">Invia</button>
         </form>
+        </div>
+
     </main>
 </body>
 </html>

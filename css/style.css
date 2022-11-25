@@ -1,0 +1,28 @@
+body{
+    background-color: grey;
+
+}
+
+h1,
+h2,
+h3{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 10px;
+}
+button{
+    padding: 10px;
+    color: #fff;
+    background-color: crimson;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    cursor: pointer;
+}
