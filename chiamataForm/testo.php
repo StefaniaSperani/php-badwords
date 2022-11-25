@@ -5,17 +5,17 @@ if (isset($_GET['testo']) && $_GET['testo'] != '') {
     $testo = $_GET['testo'];
 }else{
     $testo = 'Devi inserire del testo';
-};
+}
 
 if (isset($_GET['censored']) && $_GET['censored'] != '') {
     $censored = $_GET['censored'];
-    echo str_replace("$censored","***","$testo");
+    echo str_replace($censored,"***", $testo);
 }else{
     $censored = 'Devi inserire la parola da censurare';
 };
 
 
-// str_replace(porzioneDaModifi care, conCosa, stringa)
+// str_replace(porzioneDaModificare, conCosa, stringa)
 
 
 ?>
@@ -30,6 +30,6 @@ if (isset($_GET['censored']) && $_GET['censored'] != '') {
 </head>
 <body>
     <h1>Il tuo testo</h1>
-    <h2><?php echo $testo; ?></h2>
+    <h2><?php echo str_replace($censored,"***", $testo); ?></h2>
 </body>
 </html>
